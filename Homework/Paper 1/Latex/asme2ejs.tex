@@ -63,13 +63,25 @@ All of these things in a large city require massive systems and complexity on th
 "Making Smart Cities Smarter – MBSE Driven IoT" delves into the process of modeling an interconnected city using model-based systems engineering techniques. 
 In this paper, the authors explain how IoT systems work and how they related to potential applications in civil city engineering.
 IoT is essentially systems that interconnect to other systems through a network or the internet, and each other the individual systems can benefit from model-based engineering in their way but becomes very relevant when describing how the models interact with each other.
-Discussed are the various challenges involving creating a "smart" city such as security, infrastructure, and architecture, then we go into specific detail on how you would go about making models of these systems and describing how they connect.
+Discussed are the various challenges involving creating a "smart" city such as security, infrastructure, and architecture, then we go into specific detail on how you would go about making models of these systems and describing how they connect.\\
+
+The authors have a nice flow to presenting the topics at hand. 
+First, they start very basic in talking about the benefits of smart products on a smaller scale, next into the infrastructure, architecture, and security of these products which gives a great introduction into how systems of IoT products work before we even get to scaling things up.
+Next, they establish a good baseline of knowledge of the MBSE process and SysML and how this benefits the systems engineering process.
+Finally, after we have the required knowledge they go into how this can be applied to make a smart city and in doing so give a great specific example of how the MBSE process could be applied to a traffic signal system down to the individual hardware view.\\
+
+For the MBSE example problem, they dive into traffic control which is an intreating topic that everyone can understand but also gives a good insight into the complexity of these kinds of systems. 
+In a large city, there are large instants to increase efficacy in traffic flow and minimize disruptions as much as possible, as every delay costs time and money for everyone involved and increases road ware, gas usage, and pollution. 
+Introducing IoT technology can help improve the system but also can cause some concerns such as security, creating always connected versions of the city's most vital infrastructure opens up the systems to more potential security vulnerabilities.
+However, using an MBSE approach we can help make sure every connection and interface in the system and sub-systems is accounted for and secure as possible.
+In the end, there's a lot of interesting ideas and implications that this paper tackles, from the large idea of connecting cities and the best approach to go about engineering it.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Opinion}
 
-Overall the authors present a very clear picture of what a smart city entails, starting on the basic what is IoT to how they relate to smart cities, to the challenges involved and finally detailed examples of how to model these systems of systems using SysML.\\
+All in all the authors present a very clear picture of what a smart city entails, starting on the basic what is IoT to how they relate to smart cities, to the challenges involved and finally detailed examples of how to model these systems of systems using SysML.
+However, even though SysML is explained in detail and some history on it is told there's actually no examples of code given to show how it's used which would have been nice.\\
 
 Also, a good job is done in explaining all aspects of the topics introduced. 
 Even before we get into the specifics of MBSE, IoT and Smart Cities are all explained in concept and detail.
@@ -82,18 +94,29 @@ Within those concepts a lot of aspects and history are explained, things like Sy
 It is very easy for someone who has no idea of the topic to be able to read and understand this paper which is not always the case with technical publications. 
 I particularly like how at every aspect they relate the descriptions of city building to systems engineering principals and even give an example city and how it could be described in diagrams.\\
 
-A cool thing they do is setup an real world applicable example problem and then take a look at the MBSE approach of solving that problem from a operational view and then dig into an example systems view. 
-This is a very easy to follow and can easily be envisioned how it applies to a real problem you'd face in building a smart city.
+A cool thing they do is set up a real-world applicable example problem and then take a look at the MBSE approach of solving that problem from an operational view and then dig into an example systems view. 
+This is very easy to follow and can easily be envisioned how it applies to a real problem you'd face in building a smart city.
 Despite the kinda rough looking user diagrams once we get into the models we have a very clear picture of what's going on. 
 The authors present a good first operational view that shows the different capabilities that a traffic system would have i.e. lights control, traffic monitoring, prediction, etc. 
-Then within those high level capabilities you see properties that describe the hardware systems that make up that ability.
-Next they logically dive into the operational view when keeps the capability models but now shows the interactions of what operations occur when one of those capabilities is triggered.
+Then within those high-level capabilities, you see properties that describe the hardware systems that make up that ability.
+Next, they logically dive into the operational view when keeps the capability models but now show the interactions of what operations occur when one of those capabilities is triggered.
 Like how when a traffic event happens road crews are dispatched, traffic is rerouted, etc.
-Finally we get into the systems and individual system views. 
+Finally, we get into the systems and individual system views. 
 These show how the physical hardware works to make these traffic control systems, and the interactions the hardware components have with each other.\\
 
-Overall this is a just about perfect way to describe the MBSE approach to systems engineering.
-You can logically follow how they models work from the top view down to individual hardware, and you can easily envision this as part of a greater smart city where you are now modeling the interactions that different systems have in the city.
+On the whole, this is just about the perfect way to describe the MBSE approach to systems engineering, it's simple, clear and concise in its approach to showing how a real-life situation would work.
+You can logically follow how they models work from the top view down to individual hardware, and you can easily envision this as part of a greater smart city where you are now modeling the interactions that different systems have in the city.\\
+
+For example, refer to figure 1 above to see how they approach modeling the various views. 
+You can see that each functional capability is modeled, then in the operational view it models the methods that complete the capabilities mapped out there, and finally, in the views of the system, it models the hardware systems that complete the given tasks.
+It's a very logical and precise way of planning out and engineering a system like this.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\linewidth]{Annotation.png}
+    \caption{Traffic Management Capabilities.}
+    \label{fig:Traffic}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -139,7 +162,7 @@ Now obviously not every single IoT device interacts with every other device howe
 One of the cool things about this paper is how it takes a look at the various things that need to be considered from just a simple engineering perspective before we even start on MBSE. Everything from security, hardware, software, protocols, energy, etc. are all considered.
 All those things fit into the system engineering life cycle and need to be considered at some point.
 They took surveys of INCOSE professionals for what they consider the highest impact areas from a system engineering perspective with security and connectivity winning out.
-Overall this paper gives an interesting view of the unique challenges presented by an IoT system and is tenfold more important if you relate to the idea of building an IoT city were not considering these factors could have devastating impacts.
+Generally, this paper gives an interesting view of the unique challenges presented by an IoT system and is tenfold more important if you relate to the idea of building an IoT city were not considering these factors could have devastating impacts.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
